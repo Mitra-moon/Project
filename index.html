@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mitra's Cinema 🍿</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <h1>Welcome to Mitra's Cinema 🎬</h1>
+        <p class="now-playing">Now Playing:A girl with many dreams!</p>
+
+        <video controls>
+            <source src="media/trailer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="buttons">
+            <button onclick="restartVideo()">Play Again</button>
+            <button onclick="alert('Thanks for rating!')">Rate Movie</button>
+        </div>
+
+        <marquee behavior="alternate" class="marquee">Enjoy the Show! 🍿✨</marquee>
+    </section>
+
+    <script>
+        function restartVideo() {
+            const video = document.querySelector('video');
+            video.currentTime = 0;
+            video.play();
+        }
+    </script>
+</body>
+</html>
+        
